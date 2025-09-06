@@ -24,3 +24,16 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+const gallery = document.querySelector(".gallery");
+
+// Створюємо HTML-рядки для всіх зображень
+const markup = images
+  .map(
+    ({ url, alt }) =>
+      `<li class="gallery-item"><img src="${url}" alt="${alt}" class="gallery-img"></li>`
+  )
+  .join("");
+
+// Додаємо в DOM за одну операцію
+gallery.insertAdjacentHTML("beforeend", markup);

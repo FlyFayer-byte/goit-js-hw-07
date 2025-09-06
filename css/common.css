@@ -12,3 +12,28 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+/* Task 2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex-basis: calc(33% - 20px); /* 3 елементи в рядку */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
